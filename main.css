@@ -1,0 +1,172 @@
+/* body {
+    height: 100%;
+}
+
+.container {
+    width: 800px;
+    height: 600px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-container {
+    width: 80%;
+    height: 60%;
+    background: #5076ff;
+    border-radius: 20px;
+    padding: 50px;
+    box-sizing: border-box;
+
+}
+.todo-item {
+    color: azure;
+    font-family: "Arial Black";
+    justify-content: center;
+    display: flex;
+}
+.input-container {
+    justify-content: center;
+    display: flex;
+    outline: white;
+}
+.input-container input {
+    height: 30px;
+
+}
+.input-container button {
+cursor: pointer;
+    background: coral;
+}
+.todo-list {
+list-style-type: none;
+}
+.todo-list-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+} */
+
+
+
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Общий стиль страницы */
+body {
+    background-color: #94b3e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+/* Контейнер Todo */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #f0f2f5;
+}
+
+/* Основной блок Todo */
+.todo-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Заголовок */
+.todo-item {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Контейнер для ввода */
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+/* Поле ввода */
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+/* Кнопка добавления */
+.input-container button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Кнопка добавления при наведении */
+.input-container button:hover {
+    background-color: #4cae4c;
+}
+
+/* Список дел */
+.todo-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Элементы списка */
+.todo-list-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Элементы списка при наведении */
+.todo-list-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Кнопка удаления */
+.todo-list-item button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Кнопка удаления при наведении */
+.todo-list-item button:hover {
+    background-color: #c9302c;
+}
